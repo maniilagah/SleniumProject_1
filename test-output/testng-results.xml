@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-24T00:04:52 EST" name="Default suite" finished-at="2023-01-24T00:04:58 EST" duration-ms="6841">
+    <groups>
+    </groups>
+    <test started-at="2023-01-24T00:04:52 EST" name="Default test" finished-at="2023-01-24T00:04:58 EST" duration-ms="6841">
+      <class name="NewTestingPractice.RegisterUserTestCases">
+        <test-method is-config="true" signature="openWebsite()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:52 EST" name="openWebsite" finished-at="2023-01-24T00:04:56 EST" duration-ms="4669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebsite -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:56 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method signature="A_enterName()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="A_enterName" finished-at="2023-01-24T00:04:56 EST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A_enterName -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:56 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method signature="B_enterEmail()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="B_enterEmail" finished-at="2023-01-24T00:04:56 EST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B_enterEmail -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:56 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method signature="C_registerUser()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="C_registerUser" finished-at="2023-01-24T00:04:58 EST" duration-ms="1523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_registerUser -->
+        <test-method signature="D_datePicker()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="D_datePicker" finished-at="2023-01-24T00:04:58 EST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D_datePicker -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:58 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:58 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method signature="D_verifyNameEmailVisible()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="D_verifyNameEmailVisible" finished-at="2023-01-24T00:04:58 EST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D_verifyNameEmailVisible -->
+      </class> <!-- NewTestingPractice.RegisterUserTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
