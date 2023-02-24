@@ -1,56 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-24T00:04:52 EST" name="Default suite" finished-at="2023-01-24T00:04:58 EST" duration-ms="6841">
+  <suite started-at="2023-02-18T20:35:15 EST" name="Default suite" finished-at="2023-02-18T20:35:27 EST" duration-ms="11298">
     <groups>
     </groups>
-    <test started-at="2023-01-24T00:04:52 EST" name="Default test" finished-at="2023-01-24T00:04:58 EST" duration-ms="6841">
+    <test started-at="2023-02-18T20:35:15 EST" name="Default test" finished-at="2023-02-18T20:35:27 EST" duration-ms="11298">
       <class name="NewTestingPractice.RegisterUserTestCases">
-        <test-method is-config="true" signature="openWebsite()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:52 EST" name="openWebsite" finished-at="2023-01-24T00:04:56 EST" duration-ms="4669" status="PASS">
+        <test-method is-config="true" signature="openWebsite()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:15 EST" name="openWebsite" finished-at="2023-02-18T20:35:23 EST" duration-ms="7370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebsite -->
-        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:56 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:23 EST" name="goToSignUpPage" finished-at="2023-02-18T20:35:23 EST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSignUpPage -->
-        <test-method signature="A_enterName()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="A_enterName" finished-at="2023-01-24T00:04:56 EST" duration-ms="111" status="PASS">
+        <test-method signature="A_enterName()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:23 EST" name="A_enterName" finished-at="2023-02-18T20:35:25 EST" duration-ms="2046" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cadab33bd2cc87631cd084be7d939742, sendKeysToElement {id=e7f63b61-b9cf-4144-ac3f-c7c000b57eb1, value=[Ljava.lang.CharSequence;@1f193686}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cadab33bd2cc87631cd084be7d939742)] -> xpath: //*[@placeholder="Name" and @data-qa="signup-name"]]
+Session ID: cadab33bd2cc87631cd084be7d939742]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cadab33bd2cc87631cd084be7d939742, sendKeysToElement {id=e7f63b61-b9cf-4144-ac3f-c7c000b57eb1, value=[Ljava.lang.CharSequence;@1f193686}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cadab33bd2cc87631cd084be7d939742)] -> xpath: //*[@placeholder="Name" and @data-qa="signup-name"]]
+Session ID: cadab33bd2cc87631cd084be7d939742
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at NewTestingPractice.RegisterUserTestCases.A_enterName(RegisterUserTestCases.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A_enterName -->
-        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:56 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:25 EST" name="goToSignUpPage" finished-at="2023-02-18T20:35:25 EST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSignUpPage -->
-        <test-method signature="B_enterEmail()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="B_enterEmail" finished-at="2023-01-24T00:04:56 EST" duration-ms="69" status="PASS">
+        <test-method signature="B_enterEmail()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:25 EST" name="B_enterEmail" finished-at="2023-02-18T20:35:25 EST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- B_enterEmail -->
-        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:56 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToSignUpPage -->
-        <test-method signature="C_registerUser()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:56 EST" name="C_registerUser" finished-at="2023-01-24T00:04:58 EST" duration-ms="1523" status="PASS">
+        <test-method signature="C_registerUser()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:25 EST" name="C_registerUser" finished-at="2023-02-18T20:35:25 EST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- C_registerUser -->
-        <test-method signature="D_datePicker()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="D_datePicker" finished-at="2023-01-24T00:04:58 EST" duration-ms="344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- D_datePicker -->
-        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:58 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:25 EST" name="goToSignUpPage" finished-at="2023-02-18T20:35:25 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSignUpPage -->
-        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="goToSignUpPage" finished-at="2023-01-24T00:04:58 EST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToSignUpPage -->
-        <test-method signature="D_verifyNameEmailVisible()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@1b11171f]" started-at="2023-01-24T00:04:58 EST" name="D_verifyNameEmailVisible" finished-at="2023-01-24T00:04:58 EST" duration-ms="88" status="PASS">
+        <test-method signature="D_verifyNameEmailVisible()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:25 EST" name="D_verifyNameEmailVisible" finished-at="2023-02-18T20:35:25 EST" duration-ms="24" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@data-qa="name"]"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cadab33bd2cc87631cd084be7d939742, findElement {using=xpath, value=//input[@data-qa="name"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cadab33bd2cc87631cd084be7d939742]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@data-qa="name"]"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cadab33bd2cc87631cd084be7d939742, findElement {using=xpath, value=//input[@data-qa="name"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57629/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cadab33bd2cc87631cd084be7d939742
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at NewTestingPractice.RegisterUserTestCases.D_verifyNameEmailVisible(RegisterUserTestCases.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- D_verifyNameEmailVisible -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:25 EST" name="goToSignUpPage" finished-at="2023-02-18T20:35:25 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method is-config="true" signature="goToSignUpPage()[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:27 EST" name="goToSignUpPage" finished-at="2023-02-18T20:35:27 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignUpPage -->
+        <test-method signature="reg_User(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:NewTestingPractice.RegisterUserTestCases@3943a2be]" started-at="2023-02-18T20:35:27 EST" name="reg_User" data-provider="userData" finished-at="2023-02-18T20:35:27 EST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Meribuggi@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30/11/1995]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Manish]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Appzorro]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[116]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Dorcot Ave]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Scarborough]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[M1P3K8]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[4379746709]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reg_User -->
       </class> <!-- NewTestingPractice.RegisterUserTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

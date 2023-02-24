@@ -13,8 +13,8 @@ public class Class_ExcelDataFile {
 	public Object[][] myData(String sheetName) throws IOException
 	{
 		
-		Class_PropertiesAccess prop  = new Class_PropertiesAccess();
-		var p = prop.properties();
+//		 prop  = new Class_PropertiesAccess();
+		var p = Class_PropertiesAccess.properties();
 		
 		FileInputStream stream1 = new FileInputStream(new File(p.getProperty("excelFile")));
 		//XSSFWorkbook workBook1 = new XSSFWorkbook(stream1);

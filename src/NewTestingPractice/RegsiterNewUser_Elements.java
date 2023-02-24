@@ -24,6 +24,16 @@ public class RegsiterNewUser_Elements {
 	By checkBox_NewsLetter = By.xpath("//*[@name='newsletter']");
 	By checkBox_SpecialOffers = By.xpath("//*[@id='optin']");
 	
+	
+	By checkBox_Mr = By.xpath("//*[@id=\"uniform-id_gender1\"]");
+	By checkBox_Mrs = By.xpath("//*[@id=\"uniform-id_gender2\"]");
+	
+	By txtField_FirstName =  By.xpath("");
+	By txtField_LastName =  By.xpath("");
+	By txtField_CompanyName =  By.xpath("");
+	By txtField_StreetNumber =  By.xpath("");
+	By txtField_StreetName =  By.xpath("");
+	
 	RegsiterNewUser_Elements(WebDriver driver)
 	{
 		
@@ -51,21 +61,77 @@ public class RegsiterNewUser_Elements {
 	}
 	
 	
-	public void selectDate(String i,String j, String k)
+	public void setDate(String date)
 	{
+		var date1 = date.split("/");
 		 WebElement element	 = driver.findElement(txtField_Day);
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		js.executeScript("arguments[0].scrollIntoView();", element);
 				
 	Select dayDropDown = new  Select(element);
-
-	dayDropDown.selectByValue(i);
+	dayDropDown.selectByValue(date1[0]);
 	
 	Select monthDropDown = new  Select(driver.findElement(txtField_Month));
-	monthDropDown.selectByValue(j);
+	monthDropDown.selectByValue(date1[1]);
 	
 	Select yearDropDown = new  Select(driver.findElement(txtField_Year));
-	yearDropDown.selectByValue(k);
+	yearDropDown.selectByValue(date1[2]);
+	}
+	
+	
+	public void setcheckBox_newsLetter()
+	{
+		
+		WebElement checkBox = driver.findElement(checkBox_NewsLetter);
+		checkBox.click();
+		
+	}
+	public void setcheckBox_specialOffer()
+	{
+		
+		WebElement checkBox = driver.findElement(checkBox_SpecialOffers);
+		checkBox.click();
+		
+	}
+
+	
+	public void setPassword(String value)
+	{
+		
+		driver.findElement(txtField_Password).sendKeys(value);
+		
+	}
+	
+	public void setFirstName(String value)
+	{
+		
+		driver.findElement(txtField_Password).sendKeys();
+		
+	}
+	public void setLastName(String value)
+	{
+		
+		driver.findElement(txtField_Password).sendKeys();
+		
+	}
+	
+	
+	public void setcheckBox_Title(String value)
+	{
+		
+		
+		if(value.equals("1"))
+		{
+		WebElement element = driver.findElement(checkBox_Mr);
+		
+			element.click();
+		}
+		else
+		{
+			WebElement element = driver.findElement(checkBox_Mrs);
+			
+			element.click();
+		}
 	}
 }

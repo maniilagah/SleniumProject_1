@@ -9,8 +9,8 @@ import java.util.Properties;
 public class Class_PropertiesAccess {
 	
 	
-	Properties prop;
-	public Properties properties() throws IOException
+	 static Properties prop;
+	public static Properties properties() throws IOException
 	{
 		
 		try {
