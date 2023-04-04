@@ -59,11 +59,7 @@ public class MouseClicks {
 		act.moveToElement(button2).contextClick().build().perform();
 		Thread.sleep(1000);
 		act.moveToElement(button3).click().build().perform();
-		
-		
-		
-		
-
+	
 
 	}
 	

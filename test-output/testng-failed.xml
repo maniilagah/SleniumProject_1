@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NewTestingPractice.RegisterUserTestCases">
+      <class name="POM_Test.POM_test2">
         <methods>
-          <include name="A_enterName"/>
-          <include name="openWebsite"/>
-          <include name="goToSignUpPage"/>
-          <include name="D_verifyNameEmailVisible"/>
+          <include name="myTest2"/>
+          <include name="myTest3"/>
+          <include name="myTest"/>
         </methods>
-      </class> <!-- NewTestingPractice.RegisterUserTestCases -->
+      </class> <!-- POM_Test.POM_test2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

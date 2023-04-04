@@ -11,12 +11,13 @@ public class TestPractice {
 	static WebDriver driver;
 	static JavascriptExecutor js;
 	public static void main(String[] args) throws InterruptedException {
-		
-		
+	
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Owner\\Downloads\\chromedriver_win32\\chromedriver.exe");  
 
 		  driver = new ChromeDriver();
 		   js = (JavascriptExecutor) driver;
+		  
+		  
 //		  openThisWebsite("https://demoqa.com/automation-practice-form");
 		   
 		 
@@ -31,17 +32,19 @@ public class TestPractice {
 		
 	driver.get(address);
 	
-	
+//	following-sibling::[@id="id"]
 	Thread.sleep(1000);
 	WebElement element = driver.findElement(By.xpath("//*[@data-dpz-track-evt-name='Order | Philly Steak']//parent::div"));
 	
+	
 	js.executeScript("arguments[0].scrollIntoView();", element);
 	Thread.sleep(1000);
-	
+		
 	element.click();
 	element.click();
 	
         
+//	TakeScreenshot tx = new 
 	}
 
 }

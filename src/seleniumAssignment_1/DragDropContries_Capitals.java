@@ -64,7 +64,6 @@ public class DragDropContries_Capitals {
 			System.out.println("country id is  " + country_ID);			
 			var move_capital = capital.findElement(By.xpath(capital_ID)); 
 			var to_country = driver.findElement(By.xpath(country_ID));
-			
 			Thread.sleep(1000);
 			
 			act.dragAndDrop(move_capital, to_country).build().perform();	
